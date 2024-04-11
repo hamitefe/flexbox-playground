@@ -1,0 +1,86 @@
+:root {
+    --c0: #34495e;
+    --c1: #2c3e50;
+    --c2: #8e44ad;
+    --c3: #8e44ad;
+    --c4: #bdc3c7;
+}
+
+body {
+    overflow: hidden;
+}
+
+.layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#front {
+    position: absolute;
+}
+
+#back {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+
+#front .block {
+    background-color: var(--c2);
+}
+
+.settings {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--c0);
+}
+
+.setting {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.setting div{
+    flex: 1;
+}
+
+.title {
+    align-items: center;
+    flex: .5;
+    font-size: 30px;
+}
+
+.settinglabel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    flex: 5;
+    background-color: var(--c1);
+}
+
+.block {
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    transition: .5s;
+    height: 100px;
+    color: var(--c4)
+}
+
+span {
+    color: var(--c4)
+}

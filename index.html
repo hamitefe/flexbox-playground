@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js" defer></script>
+    <script src="inputhandler.js" defer></script>
+    <div class="layout">
+        <div class="settings">
+            <div class="setting ">
+                <input type="range" min="0" max="100" value="0" id="gapi">
+                <div class="settinglabel">
+                    <span>gap:</span>
+                    <span id="gap">20px</span>
+                </div>
+            </div>
+            <div class="setting">
+                <input type="range" max="3" value="2" id="directioni">
+                <div class="settinglabel">
+                    <span>flex direction:</span>
+                    <span id="direction">row</span>
+                </div>
+            </div>
+            <div class="setting">
+                <input type="range" max="5" value="0" id="justifyi">
+                <div class="settinglabel">
+                    <span>justify content:</span>
+                    <span id="justify">center</span>
+                </div>
+            </div>
+            <div class="setting">
+                <input type="range" max="5" value="0" id="aligni">
+                <div class="settinglabel">
+                    <span>align items:</span>
+                    <span id="align">center</span>
+                </div>
+            </div>
+            <div class="setting">
+                <input type="range" min="1" max="10" value="3" id="childi">
+                <div class="settinglabel">
+                    <span>children count:</span>
+                    <span id="child">0</span>
+                </div>
+            </div>
+            <div class="setting title">
+                <span>FLEXBOX</span>
+                <span>PLAYGROUND</span>
+            </div>
+        </div>
+        <div class="content" id="back">
+                <div class="block" id="b0"></div>
+                <div class="block" id="b1"></div>
+                <div class="block" id="b2"></div>
+        </div>
+    </div>
+    <div id="front">
+        <div class="block" id="f0">1</div>
+        <div class="block" id="f1">2</div>
+        <div class="block" id="f2">3</div>
+    </div>
+</body>
+</html>
